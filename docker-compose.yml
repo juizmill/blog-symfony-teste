@@ -5,6 +5,5 @@ services:
     image: mongo
     container_name: blog-mongodb
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: 12345
+    ports:
+      - "27017:27017"
